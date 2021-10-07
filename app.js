@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const postModel = require("./schema")
 const app = express()
-const port = 9000
+const port = process.env.PORT || 5000
  
 mongoose.connect("mongodb+srv://admin:admin@cluster0.x26vs.mongodb.net/dev",{
     useNewUrlParser: true,
